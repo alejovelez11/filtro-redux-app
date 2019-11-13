@@ -6,7 +6,7 @@ import * as fromFiltro from "./filter.action";
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(todos:Todo[], filtro:fromFiltro.filtrosValidos): Todo[] {
+  transform(todos:Todo[], filtro:any): Todo[] {
    switch (filtro) {
      case "completados":
        return todos.filter(todo=>todo.completado)
